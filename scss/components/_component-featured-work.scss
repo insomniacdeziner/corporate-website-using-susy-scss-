@@ -1,0 +1,15 @@
+.featured-work{
+	@include span(12);
+
+}
+.feature{
+	img{
+		@include span(12);
+
+		@include breakpoint($desktop){
+			@include span(4 (gutters: 0));
+
+		}
+	}
+
+}

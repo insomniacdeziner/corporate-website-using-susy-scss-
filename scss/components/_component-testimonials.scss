@@ -1,0 +1,28 @@
+.testimonials{
+	@include span(12);
+	background-color: $san-marino;
+	margin-top: 30px;
+	padding: 3em 1.5em;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+
+	.heading-small{
+		color: #fff;
+	}
+}
+
+.testimonial-large{
+	font-size: 3em;
+	color: #fff;
+	padding: 20px 0;
+	margin: 0;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.tesimonial-small{
+	font-size: 1.3em;
+	font-style: italic;
+}
+

@@ -1,0 +1,32 @@
+.selected-clients{
+	@include span(12);
+
+	@include breakpoint($desktop){
+		margin-bottom: 30px;
+
+
+	}
+
+	ul{
+		list-style-type: none;
+
+			@include breakpoint($desktop){
+				@include span(10);
+				@include push(1);
+			}
+
+		li{
+			@include span(3 (gutters: 0));
+			text-align: center;
+
+			&:last{
+				@include last;
+			}
+
+			img{
+				max-width: 160px;
+				height: auto;
+			}
+		}
+	}
+}

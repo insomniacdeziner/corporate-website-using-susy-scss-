@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body{
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #3f3f3f;
+	background-color: #fff;
+}
+
+/* LINKS */
+
+a{
+	text-decoration: none;
+}
+
+.logo{
+	text-align: center;
+
+	@include breakpoint($desktop){
+		position: relative;
+		float: left;
+		bottom: 4px;
+		margin: 0;
+		padding: 0;
+		@include push(1);
+	}
+
+}
+
+/* IMAGES */
+
+.img-responsive{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+.heading{
+	text-align: center;
+	margin: 2em 0.3em;
+	font-size: 2.2em;
+	line-height: 1;
+
+	 @include breakpoint($desktop){
+		font-size: 3em;
+		margin: 1em 0.3em;
+	}
+}
+
+.heading-small{
+	text-align: center;
+	margin: 1em 0.3em 0.5em;
+	font-size: 2.2em;
+	line-height: 1;
+}

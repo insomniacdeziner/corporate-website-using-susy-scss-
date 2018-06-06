@@ -1,0 +1,29 @@
+.news{
+	@include span(12);
+	padding-bottom: 30px;
+	background-color: lighten($mine-shaft, 75%);
+}
+
+.inner-news{
+	margin-top: 40px;
+
+	 @include breakpoint($desktop){
+		@include span(8 of 12);
+	 	@include push(2);
+	}
+}
+
+.news-box{
+	@include span(12);
+	padding: 10px;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	@include breakpoint($desktop){
+		@include span(6 (gutters: 0));
+	}
+}
+

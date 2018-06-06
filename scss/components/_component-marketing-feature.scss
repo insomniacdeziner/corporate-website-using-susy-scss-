@@ -1,0 +1,84 @@
+.marketing{
+	@include span(12);
+}
+.marketing-title{
+	@include span(12);
+	text-align: center;
+	margin: 1em 0.3em;
+	font-size: 2.2em;
+	line-height: 1;
+
+	@include breakpoint($desktop){
+		@include span(8 of 12);
+		@include push(2);
+	}
+}
+
+.marketing-feature{
+	@include span(12);
+}
+
+.marketing-image{
+	@include span(12);
+
+	@include breakpoint($desktop){
+		@include span(6 first (gutters: 0));
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+
+
+}
+
+.marketing-caption{
+	@include span(12);
+
+	@include breakpoint($desktop){
+		@include span(6 last (gutters: 0));
+		padding: 1.5em;
+	}
+
+	.copy{
+		padding-right: 20px;
+		@include push(1);
+
+		@include breakpoint($desktop){
+			padding: 0;
+		}
+	}
+}
+
+
+.marketing-image-right{
+		@include breakpoint($desktop){
+		@include span(6 last (gutters: 0));
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+}
+
+.marketing-caption-left{
+	@include span(10);
+	padding: 0 20px 0 30px;
+
+	@include breakpoint($desktop){
+		@include span(5 first (gutters: 0));
+	}
+}
+
+
+.copy{
+	margin-top: .5em;
+
+	@include breakpoint($desktop){
+		padding: 10px 0 10px;
+	}
+}

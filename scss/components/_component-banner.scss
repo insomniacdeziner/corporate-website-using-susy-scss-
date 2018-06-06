@@ -1,0 +1,44 @@
+.banner{
+	background-image: url(../images/mobile-banner-home.jpg);
+	background-size: cover;
+	display: block;
+	height: 640px;
+
+	@include breakpoint($desktop){
+	  background-image: url(../images/banner-home.jpg);
+	}
+}
+
+.caption{
+	@include span(10);
+	@include push(1);
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+
+	h1, p{
+		   color: #fff;
+		   margin-bottom: 0;
+		   line-height: 1;
+	   }
+
+	   p{
+	   		margin: 10px 0 0px;
+	   }
+	.btn{
+		margin-top: 0.5em;
+	}
+
+	   @include breakpoint($desktop){
+		   @include span(10);
+
+		}
+
+		.btn{
+			margin-top: 1em;
+		}
+
+
+	}

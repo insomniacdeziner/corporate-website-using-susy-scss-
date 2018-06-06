@@ -1,0 +1,42 @@
+footer{
+	background-color: darken($san-marino, 10%);
+	color: #fff;
+}
+
+.social-media{
+	@include span(8);
+	@include push(2);
+
+	ul{
+		width: span(8);
+		margin: 0 auto;
+		list-style-type: none;
+		display: block;
+		height: 40px;
+		text-align: center;
+		padding-top: 10px;
+
+		li{
+			display: inline-block;
+
+			a{
+				color: #fff;
+				margin: 10px;
+			    width: 80px;
+			    height: 30px;
+
+				&:hover, &:focus{
+					border-bottom: 2px solid white;
+					outline-offset: 3px;
+				}
+			}
+		}
+	}
+}
+
+.copyright{
+	@include span(12);
+	text-align: center;
+	font-size: smaller;
+	color: #fff;
+}

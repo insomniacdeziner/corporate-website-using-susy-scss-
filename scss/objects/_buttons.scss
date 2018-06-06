@@ -1,0 +1,31 @@
+.btn{
+	text-transform: uppercase;
+	color: $tuscany;
+	padding: 0.8em 1.3em;
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+	background-image: none;
+	border: 1px solid $tuscany;
+	border-radius: 4px;
+
+	&:hover, &:focus{
+		background-color: $tuscany;
+		color: #fff;
+	}
+}
+
+.banner .btn{
+	background-color:  $tuscany;
+	color: #fff;
+
+	&:hover, &:focus{
+		background-color: #fff;
+		color: $tuscany;
+	}
+}

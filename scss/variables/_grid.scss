@@ -1,0 +1,23 @@
+$susy: (
+	container: 100em,
+	columns: 12,
+    gutters: 0.25,
+
+
+    debug: (
+        image: show,
+        output: overlay,
+        toggle: top right
+    )
+);
+
+$mobile: 20em;
+$tablet: 30em;
+$desktop: 60em;
+
+
+@include border-box-sizing;
+
+.container {
+    @include container();
+}

@@ -1,0 +1,66 @@
+.top-navbar{
+	background-color: $san-marino;
+	height: 30px;
+	padding-right: 10px;
+	font-size: 0.9em;
+
+	a{
+		float: right;
+		color: #fff;
+		min-width:120px;
+		line-height: 30px;
+
+		&:hover,
+		&:focus {
+		    color: $tuscany;
+		    text-decoration: underline;
+		}
+
+	}
+}
+.navbar{
+	background-color: #fff;
+
+	@include breakpoint($desktop){
+		height: 50px;
+	}
+}
+
+nav{
+	background-color: #fff;
+	float: right;
+
+	@include breakpoint($desktop){
+		@include pull(1);
+	}
+
+	ul{
+		list-style-type: none;
+		margin:0;
+		padding:0;
+	}
+
+	li{
+		display:inline-block;
+
+		a{
+			display:block;
+			min-width:90px;
+			text-align: center;
+			line-height: 50px;
+			color: $san-marino;
+			background: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+
+
+			  &:hover,
+			  &:focus {
+			    color: $tuscany;
+			    text-decoration: underline;
+			  }
+
+		}
+
+	}
+}
